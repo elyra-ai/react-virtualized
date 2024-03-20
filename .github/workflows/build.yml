@@ -36,4 +36,4 @@ jobs:
         with:
           node-version: 16.x
       - run: npm install -g yarn
-      - run: ./scripts/build.sh
+      - run: ./build.sh
