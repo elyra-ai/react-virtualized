@@ -20,6 +20,6 @@ set -e
 
 echo "npm install --legacy-peer-deps"
 npm install --legacy-peer-deps
-
+cd ../
 echo "npm run build"
 npm run build
