@@ -27,6 +27,6 @@ which postcss
 postcss --help
 #echo "npm run build"
 yarn run clean:commonjs && cross-env NODE_ENV=commonjs babel source --out-dir dist/commonjs
-postcss ./source/styles.css -o styles.css --use autoprefixer
+#postcss ./source/styles.css -o styles.css --use autoprefixer
 
 #npm run build
