@@ -18,16 +18,8 @@
 
 set -e
 
-WORKING_DIR="$PWD"
-SCRIPT_DIR=$(dirname "$0")
-
-echo "cd $SCRIPT_DIR"
-cd $SCRIPT_DIR
-# install require modules
 echo "npm install --legacy-peer-deps"
 npm install --legacy-peer-deps
+
 echo "npm run build"
 npm run build
-
-echo "cd $WORKING_DIR"
-cd $WORKING_DIR
