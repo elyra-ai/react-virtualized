@@ -35,5 +35,5 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 16.x
-      - run: npm install -g yarn@v1.22.19 postcss postcss-cli
+      - run: npm install -g yarn@v1.22.19 postcss postcss-cli cross-env
       - run: ./build.sh
