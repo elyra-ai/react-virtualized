@@ -13,7 +13,7 @@
     "build:types": "flow-copy-source --ignore \"**/*.{jest,e2e,ssr,example}.js\" source/WindowScroller dist/es/WindowScroller && flow-copy-source --ignore \"**/*.{jest,e2e,ssr,example}.js\" source/AutoSizer dist/es/AutoSizer",
     "build": "yarn run build:commonjs && yarn run build:css && yarn run build:es && yarn run build:demo && yarn run build:umd",
     "build:commonjs": "yarn run clean:commonjs && cross-env NODE_ENV=commonjs babel source --out-dir dist/commonjs",
-    "build:css": "postcss source/styles.css -o styles.css --use autoprefixer",
+    "build:css": "postcss ./source/styles.css -o styles.css --use autoprefixer",
     "build:demo": "yarn run clean:demo && cross-env NODE_ENV=production webpack --config webpack.config.demo.js -p --bail",
     "build:es": "yarn run clean:es && yarn run build:types && cross-env NODE_ENV=es babel source --out-dir dist/es",
     "build:umd": "yarn run clean:umd && cross-env NODE_ENV=rollup rollup -c",
