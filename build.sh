@@ -24,5 +24,6 @@ npm install --legacy-peer-deps
 pwd
 ls -la
 which postcss
+postcss --help
 echo "npm run build"
 npm run build
