@@ -26,5 +26,4 @@ echo "Updated $GITHUB_REF_NAME build $NPM_VERSION"
 
 echo "Publishing Elyra React Virtualized $NPM_VERSION to Artifactory NPM"
 echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}" > ~/.npmrc
-echo "dry run"
-#npm publish --userconfig=~/.npmrc --registry=https://registry.npmjs.org
+npm publish --userconfig=~/.npmrc --registry=https://registry.npmjs.org
