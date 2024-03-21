@@ -25,5 +25,11 @@ yarn -v
 echo "yarn install"
 yarn install
 
-echo "yarn run build"
-yarn run build
+echo "yarn run build:commonjs"
+yarn run build:commonjs
+
+echo "yarn run build:es"
+yarn run build:es
+
+echo "yarn run build:umd"
+yarn run build:umd
