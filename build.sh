@@ -29,7 +29,12 @@ postcss --help
 yarn run clean:commonjs
 echo "cross-env--"
 ./node_modules/.bin/cross-env NODE_ENV=commonjs babel source --out-dir dist/commonjs
-echo "postcss"
-postcss ./source/styles.css -o styles.css --use autoprefixer
+echo "build:demo"
+#postcss ./source/styles.css -o styles.css --use autoprefixer
+yarn run build:es
+echo "build:demo"
+yarn run build:demo
+echo "build:umd"
+yarn run build:umd
 
 #npm run build
