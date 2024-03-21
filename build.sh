@@ -18,28 +18,12 @@
 
 set -e
 
-echo "npm install --legacy-peer-deps"
+echo "Versions ..."
+node -v
+yarn -v
+
+echo "yarn install"
 yarn install
 
-pwd
-ls -la
-which postcss
-postcss --help
-#echo "npm run build"
-yarn run clean:commonjs
-echo "cross-env--"
-./node_modules/.bin/cross-env NODE_ENV=commonjs babel source --out-dir dist/commonjs
-echo "build:demo"
-#postcss ./source/styles.css -o styles.css --use autoprefixer
-yarn run build:es
-
-echo "build:umd"
-yarn run build:umd
-
-echo "ls -l dist"
-ls -la dist
-
-echo "build:css"
-yarn run build:css
-
-#npm run build
+echo "yarn run build"
+yarn run build
