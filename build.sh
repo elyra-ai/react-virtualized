@@ -39,7 +39,7 @@ yarn run build:umd
 echo "ls -l dist"
 ls -la dist
 
-echo "build:demo"
-yarn run build:demo
+echo "build:css"
+yarn run build:css
 
 #npm run build
