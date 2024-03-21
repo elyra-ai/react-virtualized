@@ -19,7 +19,7 @@
 set -e
 
 echo "npm install --legacy-peer-deps"
-npm install --legacy-peer-deps
+yarn install
 
 pwd
 ls -la
