@@ -36,4 +36,5 @@ jobs:
         with:
           node-version: 16.x
       - run: npm install -g yarn@v1.22.19 postcss postcss-cli cross-env @babel/core @babel/cli autoprefixer
+      - run: yarn upgrade
       - run: ./build.sh
