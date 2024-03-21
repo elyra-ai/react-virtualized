@@ -32,9 +32,14 @@ echo "cross-env--"
 echo "build:demo"
 #postcss ./source/styles.css -o styles.css --use autoprefixer
 yarn run build:es
-#echo "build:demo"
-#yarn run build:demo
+
 echo "build:umd"
 yarn run build:umd
+
+echo "ls -l dist"
+ls -la dist
+
+echo "build:demo"
+yarn run build:demo
 
 #npm run build
